@@ -1,0 +1,82 @@
+[
+  {
+    "exercise": "pushup",
+    "landmarks": [
+      {"joint": "shoulder", "x": 0.52, "y": 0.30, "z": 0.10},
+      {"joint": "elbow", "x": 0.60, "y": 0.45, "z": 0.12},
+      {"joint": "wrist", "x": 0.68, "y": 0.60, "z": 0.15}
+    ],
+    "angle": 170,
+    "label": "correct"
+  },
+  {
+    "exercise": "pushup",
+    "landmarks": [
+      {"joint": "shoulder", "x": 0.50, "y": 0.35, "z": 0.10},
+      {"joint": "elbow", "x": 0.58, "y": 0.50, "z": 0.12},
+      {"joint": "wrist", "x": 0.65, "y": 0.65, "z": 0.15}
+    ],
+    "angle": 95,
+    "label": "incorrect"
+  },
+  {
+    "exercise": "squat",
+    "landmarks": [
+      {"joint": "hip", "x": 0.50, "y": 0.50, "z": 0.10},
+      {"joint": "knee", "x": 0.55, "y": 0.70, "z": 0.12},
+      {"joint": "ankle", "x": 0.60, "y": 0.90, "z": 0.15}
+    ],
+    "angle": 175,
+    "label": "correct"
+  },
+  {
+    "exercise": "squat",
+    "landmarks": [
+      {"joint": "hip", "x": 0.52, "y": 0.55, "z": 0.10},
+      {"joint": "knee", "x": 0.57, "y": 0.75, "z": 0.12},
+      {"joint": "ankle", "x": 0.62, "y": 0.95, "z": 0.15}
+    ],
+    "angle": 110,
+    "label": "incorrect"
+  },
+  {
+    "exercise": "biceps_curl",
+    "landmarks": [
+      {"joint": "shoulder", "x": 0.48, "y": 0.30, "z": 0.10},
+      {"joint": "elbow", "x": 0.50, "y": 0.50, "z": 0.12},
+      {"joint": "wrist", "x": 0.52, "y": 0.65, "z": 0.15}
+    ],
+    "angle": 165,
+    "label": "correct"
+  },
+  {
+    "exercise": "biceps_curl",
+    "landmarks": [
+      {"joint": "shoulder", "x": 0.48, "y": 0.35, "z": 0.10},
+      {"joint": "elbow", "x": 0.52, "y": 0.55, "z": 0.12},
+      {"joint": "wrist", "x": 0.56, "y": 0.75, "z": 0.15}
+    ],
+    "angle": 120,
+    "label": "incorrect"
+  },
+  {
+    "exercise": "shoulder_press",
+    "landmarks": [
+      {"joint": "shoulder", "x": 0.50, "y": 0.25, "z": 0.10},
+      {"joint": "elbow", "x": 0.52, "y": 0.40, "z": 0.12},
+      {"joint": "wrist", "x": 0.54, "y": 0.55, "z": 0.15}
+    ],
+    "angle": 170,
+    "label": "correct"
+  },
+  {
+    "exercise": "shoulder_press",
+    "landmarks": [
+      {"joint": "shoulder", "x": 0.50, "y": 0.30, "z": 0.10},
+      {"joint": "elbow", "x": 0.55, "y": 0.50, "z": 0.12},
+      {"joint": "wrist", "x": 0.60, "y": 0.70, "z": 0.15}
+    ],
+    "angle": 130,
+    "label": "incorrect"
+  }
+]

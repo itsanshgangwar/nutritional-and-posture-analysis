@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+backend/__pycache__/
+backend/uploads/*
+!backend/uploads/.gitkeep
+posture_analysis_dataset_150mb.csv
+.DS_Store
+Thumbs.db

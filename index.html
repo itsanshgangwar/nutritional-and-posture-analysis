@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Posture Recognition</title>
+  <link rel="stylesheet" href="new.css">
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Real-Time Posture Recognition</h1>
+      <p class="subtitle">Exercise Analysis & Nutritional Insights</p>
+    </header>
+    
+    <nav>
+      <button class="nav-btn active" onclick="showSection('posture')">Posture Recognition</button>
+      <a href="NutritionAnalysis.html"><button class="nav-btn">Nutrition Analysis</button></a>
+    </nav>
+    
+    <main>
+      <section id="posture-section" class="active fade-in">
+        <div class="exercise-selector">
+          <button class="exercise-btn" onclick="selectExercise('pushup')">Pushup</button>
+          <button class="exercise-btn" onclick="selectExercise('squat')">Squat</button>
+          <button class="exercise-btn" onclick="selectExercise('biceps_curl')">Biceps Curl</button>
+          <button class="exercise-btn" onclick="selectExercise('shoulder_press')">Shoulder Press</button>
+        </div>
+        
+        <div class="video-container">
+          <video id="video" autoplay muted></video>
+          <canvas id="canvas"></canvas>
+        </div>
+        
+        <div class="stats">
+          <div class="stat-card">
+            <div>Reps</div>
+            <div id="reps">0</div>
+          </div>
+          <div class="stat-card">
+            <div>Stage</div>
+            <div id="stage">UP</div>
+          </div>
+          <div class="stat-card">
+            <div>Angle</div>
+            <div id="angle">--</div>
+          </div>
+        </div>
+        
+        <div class="feedback" id="feedback"></div>
+      </section>
+    </main>
+  </div>
+  
+  <script src="posture.js"></script>
+</body>
+</html>
